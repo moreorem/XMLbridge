@@ -1,0 +1,41 @@
+directories:
+  download:
+    - \path\to\xml\download\ # resources\import
+  processed:
+    - \path\to\xml\download\backup # resources\import\backup\
+  export:
+    - \path\to\xml\upload\ # resources\export\
+  uploaded:
+    - \path\to\xml\upload\backup # resources\export\backup\
+  
+xml:
+  segmentIndicator: 'SEGMENT' # the attribute of the xml tag that allows it to be converted into a table
+
+ftp:
+  host: 'ftphostname'
+  name: 'username'
+  pass: 'password'
+  hashed: ''
+  remoteWorkpath: '/ftp/folder/to/import/'
+  remoteUpload: '/ftp/folder/to/export/'
+
+sql:
+  host: 'sqlserverinstance'
+  name: 'username'
+  pass: 'password'
+  dbase: 'databasename'
+  filehistory: 'fileshistorytable'
+  exporthistory: 'exporthistorytable'
+  istemptable: True
+
+# EDI prefix name and corresponding stored procedure to be executed
+procedures:
+  MATERIALS:
+    - 'storedProcedureName'
+  SHIPMENT:
+    - 'storedProcedureName'
+  UPDATE:
+    - 'storedProcedureName'
+  REWORK:
+    - 'storedProcedureName'
+

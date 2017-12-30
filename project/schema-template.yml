@@ -1,0 +1,35 @@
+# Here you add the ideal template of each xml type that is going to be converted into sql tables. It helps in order to keep a stable output 
+# for the stored procedures in case any xml does not have some segments or elements this file helps to produce them as empty
+
+
+MATERIALS:
+  TABLE1:
+    - COLUMN1 
+    - COLUMN2
+    - COLUMN3 
+    - COLUMN4
+  TABLE2:
+    - COLUMN1 
+    - COLUMN2
+    - COLUMN3 
+    - COLUMN4
+    - COLUMN5
+    - COLUMN6
+    - COLUMN7 
+    - COLUMN8
+
+REWORK:
+  TABLE1:
+    - COLUMN1 
+    - COLUMN2
+    - COLUMN3 
+    - COLUMN4
+  TABLE2:
+    - COLUMN1 
+    - COLUMN2
+    - COLUMN3 
+    - COLUMN4
+    - COLUMN5
+    - COLUMN6
+    - COLUMN7 
+    - COLUMN8
